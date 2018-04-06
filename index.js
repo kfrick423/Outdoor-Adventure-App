@@ -1,6 +1,4 @@
 
-function scrollPageTo
-
 function getLongLat(location){
 	console.log($('.js-query').val());
   $.getJSON('https://maps.googleapis.com/maps/api/geocode/json',{
