@@ -1,4 +1,6 @@
 
+function scrollPageTo
+
 function getLongLat(location){
 	console.log($('.js-query').val());
   $.getJSON('https://maps.googleapis.com/maps/api/geocode/json',{
@@ -133,7 +135,7 @@ function renderClimbData(data){
 	return `
 	  <div class="result_col_4">
 	    <a href="${data.url}" target="_blank">
-	    <img src="${imgSmall}"></a>
+	    <img src="${imgSmall}" alt="rockface picture"></a>
 	    <p>${data.name}</p>
 	    <p>${data.location[1]}</p>
 	    <p>${data.type}</p>
@@ -148,7 +150,7 @@ function renderTrailData(data){
   return`   
     <div class="result_col_4">
      <a href="${data.url}" target="_blank">
-     <img src = "${data.imgSmall}"></a>
+     <img src = "${data.imgSmall}" alt="trail photo"></a>
      <p>${data.name}</p>
      <p>${data.location}</p>
      <p>${data.length} Miles</p>
