@@ -20,7 +20,7 @@ function getLongLat(location){
 function getWeatherData(lat, lng){
   console.log(lat);
   console.log(lng);
-  $.getJSON(`https://api.wunderground.com/api/9ec732be1542c3fd/forecast10day/q/${lat},${lng}.json`,{
+  $.getJSON(`https://api.wunderground.com/api/d8dc2c1a95d6b964/forecast10day/q/${lat},${lng}.json`,{
     }, 
     function(weatherResponse){
   	  let widget = renderWeatherData(weatherResponse);
